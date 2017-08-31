@@ -1,0 +1,252 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  margin: 0;
+  background-color: white;
+}
+
+div {
+  display: block;
+}
+
+header {
+  background-color: black;
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 960px;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  padding-left: 0.5rem;
+}
+
+header img {
+  height: 1.5rem;
+  width: auto;
+}
+
+header span {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  padding-left: 1rem;
+}
+
+.topbanner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  height: 25rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bannercontainer {
+  max-width: 960px;
+  margin: auto;
+}
+
+.toptitlebox {
+  color: white;
+  background-color: black;
+  max-width: 20rem;
+  display: block;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+}
+
+.toptitlebox h4 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+.toptitlebox h1 {
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar {
+	background-color: firebrick;
+}
+
+nav {
+  max-width: 960px;
+  margin: auto;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  font-family: Helvetica;
+  color: white;
+}
+
+.smallul {
+  display: none;
+}
+
+.store {
+  max-width: 960px;
+  margin: auto;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.item {
+  width: 30%;
+  text-align: center;
+}
+
+.itemimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+}
+
+.item img {
+  max-width: 8em;
+}
+
+.item span {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.lochours {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.lochours h4 {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.loc, .hours{
+  width: 35%;
+}
+
+footer {
+  color: white;
+  width: 960px;
+  margin: auto;
+  text-align: left;
+  padding: 5em 0;
+}
+
+.footercontainer {
+  background-color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    font-family: Helvetica;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .smallul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .items {
+    justify-content: space-around;
+  }
+
+  .item {
+    width: 45%;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .lochours {
+    justify-content: space-around;
+  }
+
+  .loc, .hours{
+    width: 35%;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .topbanner {
+    height: 15rem;
+  }
+
+  .toptitlebox {
+    width: 100%;
+    bottom: 0;
+    padding: 2rem 1rem;
+  }
+
+  .toptitlebox h4 {
+    font-size: 0.77rem;
+  }
+
+  .toptitlebox h1 {
+    font-size: 1rem;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .lochours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .loc, .hours {
+    width: 90%;
+    text-align: center;
+  }
+
+  .loc {
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+}
