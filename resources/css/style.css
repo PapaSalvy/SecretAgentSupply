@@ -201,7 +201,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 480px) {
 
   .topbanner {
     height: 15rem;
